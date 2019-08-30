@@ -23,6 +23,7 @@ class Index extends Component {
         let { data } = this.props;
         let list = [];
         if(defaultValue.trim().length){
+            //判断去除空格后的默认值是否为空
             if(data.length>0){
                 data=data.filter(item=>{
                     for(var k in item){
