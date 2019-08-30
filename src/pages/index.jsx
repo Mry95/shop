@@ -34,6 +34,7 @@ class Index extends Component {
             }
         }
         if (data.length > 0) {
+            //判断data数据回来没有
             list = data.map(item => {
                 return <Item key={item.id} itemId={item.id}>
                     <dt><img src={item.image_url} alt=""/></dt>
